@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#d2d"
+        android:gravity="center"
+        android:text="frame动画(逐帧动画)" />
+
+    <TextView
+        android:id="@+id/tween"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#e22"
+        android:gravity="center"
+        android:text="tween动画(补间动画)"
+        app:layout_constraintTop_toBottomOf="@+id/frame"/>
+
+
+    <TextView
+        android:id="@+id/value_animation"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#e6e7"
+        android:gravity="center"
+        android:text="属性动画_ValueAnimation"
+        app:layout_constraintTop_toBottomOf="@+id/tween"/>
+
+    <TextView
+        android:id="@+id/object_animation"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#de3"
+        android:gravity="center"
+        android:text="属性动画_ObjectAnimation"
+        app:layout_constraintTop_toBottomOf="@+id/value_animation"/>
+
+</android.support.constraint.ConstraintLayout>

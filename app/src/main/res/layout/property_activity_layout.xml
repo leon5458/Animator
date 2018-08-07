@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/java_ofint"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="@color/colorAccent"
+        android:text="Java_ValueAnimator.ofInt（int values）"/>
+
+    <TextView
+        android:id="@+id/ofint"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="@color/colorAccent"
+        android:text="Java_ValueAnimator.ofInt（int values）"
+        app:layout_constraintTop_toBottomOf="@+id/java_ofint"/>
+
+
+
+    <TextView
+        android:id="@+id/java_ofFloat"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="#d2d"
+        android:text="Java_ValueAnimator.ofFloat（float values）"
+        app:layout_constraintTop_toBottomOf="@+id/ofint"/>
+
+
+
+    <TextView
+        android:id="@+id/java_ofObject"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="#d2dd"
+        android:text="Java_ValueAnimator.ofObject"
+        app:layout_constraintTop_toBottomOf="@+id/java_ofFloat"/>
+
+
+
+      <Button
+          android:id="@+id/btn"
+          android:layout_width="150dp"
+          android:layout_height="50dp"
+          android:text="按钮"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintRight_toRightOf="parent"
+          android:layout_marginBottom="100dp"/>
+</android.support.constraint.ConstraintLayout>
